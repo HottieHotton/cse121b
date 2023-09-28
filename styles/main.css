@@ -130,6 +130,10 @@ footer {
     display: block;
 }
 
+#quotient {
+    margin-bottom: 25px;
+}
+
 /* ID Selectors */
 
 /* Media Queries */
