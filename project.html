@@ -25,40 +25,18 @@
         <li><a href="project.html" class="active">Project</a></li>
       </ul>
     </nav>
-
-    <main id="home">
-        <h1>Bible API</h1>
+    <main id="home" class="content-wrapper">
+        <h1>Pokemon API</h1>
     </main>
-    <h3 style="text-align: center;">Search a Scripture, or generate a random scripture!</h3>
+    <h3 style="text-align: center;">Search up for a pokemon and view the results!</h3>
     <hr>
     <div style="text-align: center;">
-        <select id="sortBy" title="Select Bible Version">
-            <option value="" disabled selected>Filter Versions</option>
-            <option value="Cherokee">Cherokee</option>
-            <option value="BBE">Basic English</option>
-            <option value="KJV">King James</option>
-            <option value="WEB">World English</option>
-            <option value="OEB-cw">Open English - Commonwealth</option>
-            <option value="Webbe">World English - British</option>
-            <option value="OEB-us">Open English - USA</option>
-            <option value="Clementine">Clementine Latin Vulgate</option>
-            <option value="Almeida">João Ferreira de Almeida(Portuguese)</option>
-            <option value="RCCV">Romanian Corrected Cornilescu Version</option>
-        </select>
-        <label for="Book">Book:</label>
-        <input type="text" id="Book" name="Book">
-        <label for="Chapter">Chapter:</label>
-        <input type="number" id="Chapter" name="Chapter">
-        <label for="Verse">Verse(s):</label>
-        <input type='number' inputmode="numeric" id="Verse" name="Verse">
-        <button type="button" id="getScripture">Get Scripture(s)!</button>
+        <label for="Pokemon">Pokemon:</label><br>
+        <input type="text" id="Pokemon" name="Pokemon"><br><br>
+        <button type="button" id="getPokemon">Get Pokemon!</button>
     </div>
         <hr>
-        <div id="results">OR</div>
-        <hr>
-    <div class="rando">
-        <button type="button" id="getRandomScripture">Get a Random Scripture!</button>
-    </div>
+        <div id="results"><h1>Pokemon:</h1></div>
         <footer>
       &copy;<span id="year"></span> | Final Project | CSE 121b
     </footer>

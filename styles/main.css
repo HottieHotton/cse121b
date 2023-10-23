@@ -7,6 +7,9 @@
 /* HTML Selectors */
 body {
     font-family: 'Roboto', Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 nav {
     background-color: black;
@@ -135,10 +138,15 @@ footer {
     padding: 15px;
     text-align: center;
     width: 100%;
-    position: fixed;
+    position:relative;
     bottom: 0;
+    flex-shrink: 0;
 }
 /* Class Selectors */
+.content-wrapper {
+    flex: 1 0 auto;
+}
+
 .active {
     border-bottom: 1px solid yellow;
 }
@@ -232,37 +240,9 @@ footer {
 
 #results{
     text-align: center;
-}
-#getRandomScripture {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  }
-  
-  #getRandomScripture:hover {
-    background-color: rgba(255, 0, 0, 1);
-  }
-  
-  #getRandomScripture:active {
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
-  .rando {
-    display: flex;
-    justify-content: center;
+    display: grid;
     align-items: center;
-    height: 10vh;
+    justify-content: center;
 }
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
