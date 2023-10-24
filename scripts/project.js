@@ -1,20 +1,6 @@
 //Global variables
-let pokemonList;
 let results = document.querySelector("#results");
-
-const getPokemon = async (name) => {
-  const response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`,
-    {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    }
-  );
-  if (response.ok) {
-    pokemonList = await response.json();
-    return pokemonList;
-  }
-};
+import { getPokemon } from "./fetch.js";
 
 const displayPokemon = async () => {
   results.innerHTML = "<h1>Pokemon:</h1>";
